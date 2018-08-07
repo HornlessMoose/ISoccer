@@ -55,8 +55,15 @@ public class Administrador {
         telefone = input.nextLine();
 
         System.out.print("Salario: ");
-        salario = Double.parseDouble(input.nextLine());
+        while(true) {
+            try {
+                salario = Double.parseDouble(input.nextLine());
+                break;
+            }catch (NumberFormatException nrm){
+                System.out.println("Deve ser fornecido um valor double para o salario");
+            }
 
+        }
         funcionario = new Funcionario(nome, email, CPF, telefone, salario);
 
         return funcionario;

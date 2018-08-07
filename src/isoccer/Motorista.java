@@ -1,6 +1,5 @@
 package isoccer;
 
-import isoccer.Funcionario;
 
 public class Motorista extends Funcionario {
     private String CNH;

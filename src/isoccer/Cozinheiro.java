@@ -1,6 +1,6 @@
 package isoccer;
 
-import isoccer.Funcionario;
+
 
 public class Cozinheiro extends Funcionario {
 

@@ -7,7 +7,7 @@ public class Main {
     private static Scanner input = new Scanner(System.in);
     private static Administrador admin = new Administrador("moose", "1755913");
     private static int opcao;
-    private static String buscar;
+    private static String buscar, estadoPagamento;
 
     public static void main(String[] args) {
 
@@ -16,135 +16,165 @@ public class Main {
     }
 
     private static void loginMenu(){
-
-        boolean logado = true;
         String login, senha;
 
-        while(logado){
+        try {
+
+            System.out.println("\n LOGIN MENU\n");
+
             System.out.println("1: Fazer login como administrador\n2: Sair");
             opcao = Integer.parseInt(input.nextLine());
 
-            switch (opcao){
+
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro\n");
+            loginMenu();
+        }
+        finally {
+            switch (opcao) {
                 case 1:
                     System.out.println("Digite o login e senha do administrador");
                     login = input.nextLine();
                     senha = input.nextLine();
 
-                    if(admin.validarAdmin(login, senha)){
+                    if (admin.validarAdmin(login, senha)) {
                         adminMenu();
-                    }
-                    else{
+                    } else {
                         System.out.println("Login ou senha incorreto.");
                     }
 
+                    loginMenu();
                     break;
                 case 2:
-                    logado = false;
                     break;
                 default:
                     System.out.println("Opção inválida");
+                    loginMenu();
 
             }
-
-
         }
+
+
+
     }
 
     private static void adminMenu(){
 
-        System.out.println("1: Adicionar Funcionarios\n2: Gerenciar Socio Torcedor\n" +
-                "3: Gerenciar Recursos\n4: Solicitar Relatório\n5: Sair");
+        try {
+            System.out.println("\n ADMINISTRADOR MENU\n");
+            System.out.println("1: Adicionar Funcionarios\n2: Gerenciar Socio Torcedor\n" +
+                    "3: Gerenciar Recursos\n4: Solicitar Relatório\n5: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+            opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
 
-            case 1:
-                addFuncionario();
-                adminMenu();
-                break;
-            case 2:
-                gerenciarSocioTorcedor();
-                adminMenu();
-                break;
-            case 3:
-                gerenciarRecursos();
-                adminMenu();
-                break;
-            case 4:
-                mostrarRelatorio();
-                adminMenu();
-                break;
-            case 5:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                adminMenu();
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            adminMenu();
+        }finally {
+            switch (opcao) {
+
+                case 1:
+                    addFuncionario();
+                    adminMenu();
+                    break;
+                case 2:
+                    gerenciarSocioTorcedor();
+                    adminMenu();
+                    break;
+                case 3:
+                    gerenciarRecursos();
+                    adminMenu();
+                    break;
+                case 4:
+                    mostrarRelatorio();
+                    adminMenu();
+                    break;
+                case 5:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    adminMenu();
+            }
         }
 
     }
 
     private static void gerenciarRecursos() {
-        System.out.println("1: Gerenciar Onibus\n2: Gerenciar Estádio\n3: Gerenciar Centro Treinamento\n4: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+        try {
+            System.out.println("\n GERENCIAR RECURSOS\n");
+            System.out.println("1: Gerenciar Onibus\n2: Gerenciar Estádio\n3: Gerenciar Centro Treinamento\n4: Voltar");
 
-        switch (opcao){
-            case 1:
-                gerenciarOnibus();
-                gerenciarRecursos();
-                break;
-            case 2:
-                gerenciarEstadio();
-                gerenciarRecursos();
-                break;
-            case 3:
-                gerenciarCentroTreinamento();
-                gerenciarRecursos();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                gerenciarRecursos();
+            opcao = Integer.parseInt(input.nextLine());
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            gerenciarRecursos();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    gerenciarOnibus();
+                    gerenciarRecursos();
+                    break;
+                case 2:
+                    gerenciarEstadio();
+                    gerenciarRecursos();
+                    break;
+                case 3:
+                    gerenciarCentroTreinamento();
+                    gerenciarRecursos();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    gerenciarRecursos();
+
+            }
         }
     }
 
     private static void gerenciarCentroTreinamento() {
-        System.out.println("1: Adicionar Centro Treinamento\n2: Disponibilidade\n3: Quantidade Dormitórios\n4: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+        try {
+            System.out.println("\n GERENCIAR CENTRO TREINAMENTO\n");
+            System.out.println("1: Adicionar Centro Treinamento\n2: Disponibilidade\n3: Quantidade Dormitórios\n4: Voltar");
 
-        switch (opcao){
-            case 1:
-                if(admin.getCentroTreinamento() == null) {
-                    admin.addCentroTreinamento();
-                }
-                else{
-                    System.out.println("Centro Treinamento já adicionado.");
-                }
-                gerenciarCentroTreinamento();
-                break;
-            case 2:
-                centroTreinamentoDisponivel();
-                gerenciarCentroTreinamento();
-                break;
-            case 3:
-                if(admin.getCentroTreinamento() != null) {
-                    System.out.println("Existem" + admin.getCentroTreinamento().getDormitorios() + "Dormitórios");
-                }
-                else{
-                    System.out.println("O time não possui centro de treinamento.");
-                }
-                gerenciarCentroTreinamento();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção inválida");
-                gerenciarCentroTreinamento();
+            opcao = Integer.parseInt(input.nextLine());
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            gerenciarCentroTreinamento();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    if (admin.getCentroTreinamento() == null) {
+                        admin.addCentroTreinamento();
+                    } else {
+                        System.out.println("Centro Treinamento já adicionado.");
+                    }
+                    gerenciarCentroTreinamento();
+                    break;
+                case 2:
+                    centroTreinamentoDisponivel();
+                    gerenciarCentroTreinamento();
+                    break;
+                case 3:
+                    if (admin.getCentroTreinamento() != null) {
+                        System.out.println("Existem" + admin.getCentroTreinamento().getDormitorios() + "Dormitórios");
+                    } else {
+                        System.out.println("O time não possui centro de treinamento.");
+                    }
+                    gerenciarCentroTreinamento();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção inválida");
+                    gerenciarCentroTreinamento();
+
+            }
         }
     }
 
@@ -158,77 +188,89 @@ public class Main {
     }
 
     private static void gerenciarEstadio() {
-        System.out.println("1: Adicionar Estadio\n2: Disponibilidade\n3: Administrar Estadio\n4: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+        try {
+            System.out.println("\n GERENCIAR ESTÁDIO\n");
+            System.out.println("1: Adicionar Estádio\n2: Disponibilidade\n3: Administrar Estádio\n4: Voltar");
 
-        switch (opcao){
-            case 1:
-                if(admin.getEstadio() == null) {
-                    admin.addEstadio();
-                }
-                else{
-                    System.out.println("Estadio já adicionado.");
-                }
-                gerenciarEstadio();
-                break;
-            case 2:
-                estadioDisponivel();
-                gerenciarEstadio();
-                break;
-            case 3:
-                administrarEstadio();
-                gerenciarEstadio();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                gerenciarEstadio();
+            opcao = Integer.parseInt(input.nextLine());
+
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            gerenciarEstadio();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    if (admin.getEstadio() == null) {
+                        admin.addEstadio();
+                    } else {
+                        System.out.println("Estadio já adicionado.");
+                    }
+                    gerenciarEstadio();
+                    break;
+                case 2:
+                    estadioDisponivel();
+                    gerenciarEstadio();
+                    break;
+                case 3:
+                    administrarEstadio();
+                    gerenciarEstadio();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    gerenciarEstadio();
+            }
         }
     }
 
     private static void administrarEstadio() {
-        System.out.println("1: Torcedores Suportados\n2: Quantidade Banheiros\n3: Quantidade Lanchonetes\n4: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+        try {
+            System.out.println("\n ADMINISTRAR ESTÁDIO\n");
+            System.out.println("1: Torcedores Suportados\n2: Quantidade Banheiros\n3: Quantidade Lanchonetes\n4: Voltar");
 
-        switch (opcao){
-            case 1:
-                if(admin.getEstadio() != null) {
-                    System.out.print("Nova Quantidade de torcedores suportados: ");
-                    admin.getEstadio().setTorcedoresSuportados(Integer.parseInt(input.nextLine()));
-                }
-                else{
-                    System.out.println("O time não possui estádio.");
-                }
-                administrarEstadio();
-                break;
-            case 2:
-                if(admin.getEstadio() != null) {
-                    System.out.print("Nova Quantidade de banheiros: ");
-                    admin.getEstadio().setQntdBanheiros(Integer.parseInt(input.nextLine()));
-                }
-                else{
-                    System.out.println("O time não possui estádio.");
-                }
-                administrarEstadio();
-                break;
-            case 3:
-                if(admin.getEstadio() != null) {
-                    System.out.print("Nova Quantidade de lanchonetes: ");
-                    admin.getEstadio().setQntdLanchonetes(Integer.parseInt(input.nextLine()));
-                }
-                else{
-                    System.out.println("O time não possui estádio.");
-                }
-                administrarEstadio();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção inválida");
-                administrarEstadio();
+            opcao = Integer.parseInt(input.nextLine());
+
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            administrarEstadio();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    if (admin.getEstadio() != null) {
+                        System.out.print("Nova Quantidade de torcedores suportados: ");
+                        admin.getEstadio().setTorcedoresSuportados(Integer.parseInt(input.nextLine()));
+                    } else {
+                        System.out.println("O time não possui estádio.");
+                    }
+                    administrarEstadio();
+                    break;
+                case 2:
+                    if (admin.getEstadio() != null) {
+                        System.out.print("Nova Quantidade de banheiros: ");
+                        admin.getEstadio().setQntdBanheiros(Integer.parseInt(input.nextLine()));
+                    } else {
+                        System.out.println("O time não possui estádio.");
+                    }
+                    administrarEstadio();
+                    break;
+                case 3:
+                    if (admin.getEstadio() != null) {
+                        System.out.print("Nova Quantidade de lanchonetes: ");
+                        admin.getEstadio().setQntdLanchonetes(Integer.parseInt(input.nextLine()));
+                    } else {
+                        System.out.println("O time não possui estádio.");
+                    }
+                    administrarEstadio();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção inválida");
+                    administrarEstadio();
+            }
         }
 
     }
@@ -244,26 +286,35 @@ public class Main {
     }
 
     private static void gerenciarOnibus() {
-        System.out.println("1: Adicionar Onibus\n2: Disponibilidade\n3: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+        try {
+            System.out.println("\n GERENCIAR ÔNIBUS\n");
+            System.out.println("1: Adicionar Ônibus\n2: Disponibilidade\n3: Voltar");
 
-        switch (opcao){
-            case 1:
-                admin.addOnibus();
-                gerenciarOnibus();
-                break;
-            case 2:
-                onibusDisponivel();
-                gerenciarOnibus();
-                break;
-            case 3:
-                break;
-            default:
-                System.out.println("Opção inválida.");
-                gerenciarOnibus();
+            opcao = Integer.parseInt(input.nextLine());
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            gerenciarOnibus();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    admin.addOnibus();
+                    gerenciarOnibus();
+                    break;
+                case 2:
+                    onibusDisponivel();
+                    gerenciarOnibus();
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opção inválida.");
+                    gerenciarOnibus();
+
+            }
         }
+
     }
 
     private static void onibusDisponivel() {
@@ -277,28 +328,36 @@ public class Main {
     }
 
     private static void gerenciarSocioTorcedor() {
-        System.out.println("1: Adicionar Socio Torcedor\n2: Alterar estado pagamento\n" +
-                "3: Atualizar valor contribuição\n4: Sair");
-        opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
-            case 1:
-                admin.addSocioTorcedor();
-                gerenciarSocioTorcedor();
-                break;
-            case 2:
-                alterarEstdPagamento();
-                gerenciarSocioTorcedor();
-                break;
-            case 3:
-                alterarValorContribuicao();
-                gerenciarSocioTorcedor();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                gerenciarSocioTorcedor();
+        try {
+            System.out.println("\n GERENCIAR SOCIO TORCEDOR\n");
+            System.out.println("1: Adicionar Socio Torcedor\n2: Alterar estado pagamento\n" +
+                    "3: Atualizar valor contribuição\n4: Sair");
+            opcao = Integer.parseInt(input.nextLine());
+
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            gerenciarSocioTorcedor();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    admin.addSocioTorcedor();
+                    gerenciarSocioTorcedor();
+                    break;
+                case 2:
+                    alterarEstdPagamento();
+                    gerenciarSocioTorcedor();
+                    break;
+                case 3:
+                    alterarValorContribuicao();
+                    gerenciarSocioTorcedor();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    gerenciarSocioTorcedor();
+            }
         }
     }
 
@@ -311,8 +370,18 @@ public class Main {
 
             for (SocioTorcedor socioTorcedor : admin.getSocioTorcedor()) {
                 if (socioTorcedor.getCPF().equals(buscar)) {
-                    System.out.println("Digite o novc valor de contribuição para o Socio Torcedor");
-                    novoValor = Double.parseDouble(input.nextLine());
+
+                    while(true) {
+
+                        try {
+                            System.out.println("Digite o novo valor de contribuição para o Socio Torcedor");
+                            novoValor = Double.parseDouble(input.nextLine());
+                            break;
+                        } catch (NumberFormatException nmr) {
+                            System.out.println("Deve ser informado um valor double");
+                        }
+                    }
+
                     socioTorcedor.setValorAtribuicao(novoValor);
                     socioTorcedor.setPlano(novoValor);
                     return;
@@ -327,15 +396,27 @@ public class Main {
 
     private static void alterarEstdPagamento() {
 
-        if(admin.getSocioTorcedor() != null) {
+        if(admin.getSocioTorcedor().size() != 0) {
             System.out.println("Informe o CPF do Socio Torcedor");
 
             buscar = input.nextLine();
 
             for (SocioTorcedor socioTorcedor : admin.getSocioTorcedor()) {
                 if (socioTorcedor.getCPF().equals(buscar)) {
-                    System.out.println("Digite o novo estado de pagamento para o Socio Torcedor");
-                    socioTorcedor.setEstadoPagamento(input.nextLine());
+                    System.out.println("Digite o novo estado de pagamento para o Socio Torcedor(Adimplente, Inadimplente)");
+                    while(true){
+                        estadoPagamento = input.nextLine();
+
+                        if(estadoPagamento.toUpperCase().equals("ADIMPLENTE") ||
+                                estadoPagamento.toUpperCase().equals("INADIMPLENTE")){
+                            break;
+                        }
+                        else{
+                            System.out.println("Informe o novo estado de pagamento corretamente(Adimplente, Inadimplente");
+                        }
+                    }
+
+                    socioTorcedor.setEstadoPagamento(estadoPagamento);
                     return;
                 }
             }
@@ -347,70 +428,86 @@ public class Main {
     }
 
     private static void mostrarRelatorio() {
-        System.out.println("1: Funcionários\n2: Recursos Fisicos\n3: Sócio Torcedor\n4: Voltar");
-        opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
-            case 1:
-                mostrarFuncionarios();
-                mostrarRelatorio();
-                break;
-            case 2:
-                mostrarRecursosFisicos();
-                mostrarRelatorio();
-                break;
-            case 3:
-                mostrarSocioTorcedor();
-                mostrarRelatorio();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                mostrarRelatorio();
+        try {
+            System.out.println("\n MOSTRAR RELATÓRIO\n");
+            System.out.println("1: Funcionários\n2: Recursos Fisicos\n3: Sócio Torcedor\n4: Voltar");
+            opcao = Integer.parseInt(input.nextLine());
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            mostrarRelatorio();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    mostrarFuncionarios();
+                    mostrarRelatorio();
+                    break;
+                case 2:
+                    mostrarRecursosFisicos();
+                    mostrarRelatorio();
+                    break;
+                case 3:
+                    mostrarSocioTorcedor();
+                    mostrarRelatorio();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    mostrarRelatorio();
+
+            }
         }
     }
 
     private static void mostrarSocioTorcedor() {
-        System.out.println("1: Quantidade\n2: Adimplentes\n3: Inadimplentes\n4: Lista Dados Individuais\n5: Voltar");
-        opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
-            case 1:
-                if(admin.getSocioTorcedor() != null) {
-                    System.out.println("Existem " + admin.getSocioTorcedor().size() + " Sócios Torcedores");
-                }
-                else{
-                    System.out.println("O time não possui socios.");
-                }
+        try {
+            System.out.println("\n MOSTRAR SOCIO TORCEDOR\n");
+            System.out.println("1: Quantidade\n2: Adimplentes\n3: Inadimplentes\n4: Lista Dados Individuais\n5: Voltar");
+            opcao = Integer.parseInt(input.nextLine());
 
-                mostrarSocioTorcedor();
-                break;
-            case 2:
-                mostrarAdimplentes();
-                mostrarSocioTorcedor();
-                break;
-            case 3:
-                mostrarInadimplentes();
-                mostrarSocioTorcedor();
-                break;
-            case 4:
-                mostrarListaDadosIndividuais();
-                mostrarSocioTorcedor();
-                break;
-            case 5:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                mostrarSocioTorcedor();
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            mostrarSocioTorcedor();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    if (admin.getSocioTorcedor().size() != 0) {
+                        System.out.println("Existem " + admin.getSocioTorcedor().size() + " Sócios Torcedores");
+                    } else {
+                        System.out.println("O time não possui socios.");
+                    }
+
+                    mostrarSocioTorcedor();
+                    break;
+                case 2:
+                    mostrarAdimplentes();
+                    mostrarSocioTorcedor();
+                    break;
+                case 3:
+                    mostrarInadimplentes();
+                    mostrarSocioTorcedor();
+                    break;
+                case 4:
+                    mostrarListaDadosIndividuais();
+                    mostrarSocioTorcedor();
+                    break;
+                case 5:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    mostrarSocioTorcedor();
+
+            }
         }
     }
 
     private static void mostrarListaDadosIndividuais() {
 
-        if(admin.getSocioTorcedor() != null) {
+        if(admin.getSocioTorcedor().size() != 0) {
             System.out.println("Lista Socios Torcedores dados individuais:");
 
             for (SocioTorcedor socioTorcedor : admin.getSocioTorcedor()) {
@@ -425,7 +522,7 @@ public class Main {
 
     private static void mostrarInadimplentes() {
 
-        if(admin.getSocioTorcedor() != null) {
+        if(admin.getSocioTorcedor().size() != 0) {
             System.out.println("Socios Torcedores Inadimplentes:");
 
             for (SocioTorcedor socioTorcedor : admin.getSocioTorcedor()) {
@@ -443,7 +540,7 @@ public class Main {
 
     private static void mostrarAdimplentes() {
 
-        if(admin.getSocioTorcedor() != null) {
+        if(admin.getSocioTorcedor().size() != 0) {
             System.out.println("Socios Torcedores Adimplentes:");
 
             for (SocioTorcedor socioTorcedor : admin.getSocioTorcedor()) {
@@ -460,28 +557,36 @@ public class Main {
     }
 
     private static void mostrarRecursosFisicos() {
-        System.out.println("1: Transporte\n2: Centro Treinamento\n3: Estadio\n4: Voltar");
-        opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
-            case 1:
-                mostrarTransporte();
-                mostrarRecursosFisicos();
-                break;
-            case 2:
-                mostrarCentroTreinamento();
-                mostrarRecursosFisicos();
-                break;
-            case 3:
-                mostrarEstadio();
-                mostrarRecursosFisicos();
-                break;
-            case 4:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                mostrarRecursosFisicos();
+        try {
+            System.out.println("\n MOSTRAR RECURSOS FÍSICOS\n");
+            System.out.println("1: Transporte\n2: Centro Treinamento\n3: Estadio\n4: Voltar");
+            opcao = Integer.parseInt(input.nextLine());
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            mostrarRecursosFisicos();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    mostrarTransporte();
+                    mostrarRecursosFisicos();
+                    break;
+                case 2:
+                    mostrarCentroTreinamento();
+                    mostrarRecursosFisicos();
+                    break;
+                case 3:
+                    mostrarEstadio();
+                    mostrarRecursosFisicos();
+                    break;
+                case 4:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    mostrarRecursosFisicos();
+
+            }
         }
     }
 
@@ -524,24 +629,33 @@ public class Main {
     }
 
     private static void mostrarFuncionarios() {
-        System.out.println("1: Time\n2: Serviços Gerais\n3: Voltar");
-        opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
-            case 1:
-                mostrarTime();
-                mostrarFuncionarios();
-                break;
-            case 2:
-                mostrarServicosGerais();
-                mostrarFuncionarios();
-                break;
-            case 3:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                mostrarFuncionarios();
+        try {
+            System.out.println("\n MOSTRAR FUNCIONÁRIO\n");
+            System.out.println("1: Time\n2: Serviços Gerais\n3: Voltar");
+            opcao = Integer.parseInt(input.nextLine());
 
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            mostrarFuncionarios();
+        }finally {
+
+            switch (opcao) {
+                case 1:
+                    mostrarTime();
+                    mostrarFuncionarios();
+                    break;
+                case 2:
+                    mostrarServicosGerais();
+                    mostrarFuncionarios();
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    mostrarFuncionarios();
+
+            }
         }
     }
 
@@ -618,23 +732,31 @@ public class Main {
     }
 
     private static void mostrarTime() {
-        System.out.println("1: Treinador e Jogadores\n2: Jogadores Aptos e não Aptos\n3: Voltar");
-        opcao = Integer.parseInt(input.nextLine());
 
-        switch (opcao){
-            case 1:
-                mostrarTreinadorJogadores();
-                mostrarTime();
-                break;
-            case 2:
-                jogadoresAptos();
-                mostrarTime();
-                break;
-            case 3:
-                break;
-            default:
-                System.out.println("Opção Inválida.");
-                mostrarTime();
+        try {
+            System.out.println("\n MOSTRAR TIME\n");
+            System.out.println("1: Treinador e Jogadores\n2: Jogadores Aptos e não Aptos\n3: Voltar");
+            opcao = Integer.parseInt(input.nextLine());
+
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            mostrarTime();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    mostrarTreinadorJogadores();
+                    mostrarTime();
+                    break;
+                case 2:
+                    jogadoresAptos();
+                    mostrarTime();
+                    break;
+                case 3:
+                    break;
+                default:
+                    System.out.println("Opção Inválida.");
+                    mostrarTime();
+            }
         }
 
     }
@@ -697,42 +819,51 @@ public class Main {
     }
 
     private static void addFuncionario() {
-        System.out.println("1: Presidente\n2: Medico\n3: Tecnico\n4: Preparador Fisico\n" +
-                "5: Motorista\n6: Cozinheiro\n7: Advogado\n8: Jogador\n9: Voltar");
 
-        opcao = Integer.parseInt(input.nextLine());
+        try {
+            System.out.println("\n ADICIONAR FUNCIONÁRIO\n");
+            System.out.println("1: Presidente\n2: Medico\n3: Tecnico\n4: Preparador Fisico\n" +
+                    "5: Motorista\n6: Cozinheiro\n7: Advogado\n8: Jogador\n9: Voltar");
 
-        switch (opcao){
-            case 1:
-                admin.addPresidente();
-                addFuncionario();
-                break;
-            case 2:
-                admin.addMedico();
-                addFuncionario();
-            case 3:
-                admin.addTecnico();
-                addFuncionario();
-            case 4:
-                admin.addPreparadorFisico();
-                addFuncionario();
-            case 5:
-                admin.addMotorista();
-                addFuncionario();
-            case 6:
-                admin.addCozinheiro();
-                addFuncionario();
-            case 7:
-                admin.addAdvogado();
-                addFuncionario();
-            case 8:
-                admin.addJogador();
-                addFuncionario();
-            case 9:
-                break;
-            default:
-                System.out.println("Opção inválida.");
-                addFuncionario();
+            opcao = Integer.parseInt(input.nextLine());
+
+
+        }catch (NumberFormatException nmr){
+            System.out.println("A entrada deve ser um inteiro");
+            addFuncionario();
+        }finally {
+            switch (opcao) {
+                case 1:
+                    admin.addPresidente();
+                    addFuncionario();
+                    break;
+                case 2:
+                    admin.addMedico();
+                    addFuncionario();
+                case 3:
+                    admin.addTecnico();
+                    addFuncionario();
+                case 4:
+                    admin.addPreparadorFisico();
+                    addFuncionario();
+                case 5:
+                    admin.addMotorista();
+                    addFuncionario();
+                case 6:
+                    admin.addCozinheiro();
+                    addFuncionario();
+                case 7:
+                    admin.addAdvogado();
+                    addFuncionario();
+                case 8:
+                    admin.addJogador();
+                    addFuncionario();
+                case 9:
+                    break;
+                default:
+                    System.out.println("Opção inválida.");
+                    addFuncionario();
+            }
         }
     }
 

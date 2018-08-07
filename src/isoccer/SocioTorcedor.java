@@ -54,7 +54,7 @@ public class SocioTorcedor {
     public void setPlano(double valorAtribuicao) {
 
         if(valorAtribuicao <= 40.00){
-            this.plano = "Júnio";
+            this.plano = "Júnior";
         }
 
         else if(valorAtribuicao <= 75.00){
@@ -83,7 +83,7 @@ public class SocioTorcedor {
     @Override
     public String toString() {
         return "Nome: " + getNome() + "\nEmail: " + getEmail() + "\nCPF: " +  getCPF() +
-                "\nEndereco: " + getEndereco() + "\nEstado Pagamento: " + getEstadoPagamento()
-                +"\nTelefone: " + getTelefone() + "\n";
+                "\nEndereco: " + getEndereco() + "\nEstado Pagamento: " + getEstadoPagamento() +
+                "\nPlano: " + getPlano() +"\nTelefone: " + getTelefone() + "\n";
     }
 }
