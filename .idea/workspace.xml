@@ -1,0 +1,840 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2758f5d4-fdd4-4336-a768-c8f85ce095ab" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="MainControl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/control/MainControl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="498" column="4" selection-start-line="498" selection-start-column="4" selection-end-line="498" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Administrator.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/Administrator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="267">
+              <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="60" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#481#491#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeControl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/control/EmployeeControl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Stadium.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/resources/Stadium.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+              <folding>
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#585#586#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrainingCenter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/resources/TrainingCenter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/view/MainView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResourcesView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/view/ResourcesView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SupporterView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/view/SupporterView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Supporter.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/supporters/Supporter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="386">
+              <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmployeeView.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/isoccer/view/EmployeeView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-176">
+              <caret line="85" column="56" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="package-info" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>getSupporter()</find>
+      <find>estadoPagamento</find>
+      <find>mostrarFuncionarios()</find>
+      <find>mostrarRecursosFisicos()</find>
+      <find>getSupporters</find>
+      <find>mostrarSocioTorcedor()</find>
+      <find>mostrarAdimplentes()</find>
+      <find>mostrarInadimplentes()</find>
+      <find>mostrarListaDadosIndividuais()</find>
+      <find>mostrarTransporte()</find>
+      <find>mostrarCentroTreinamento()</find>
+      <find>mostrarEstadio()</find>
+      <find>mostrarTime()</find>
+      <find>mostrarServicosGerais()</find>
+      <find>mostrarTreinadorJogadores()</find>
+      <find>jogadoresAptos()</find>
+      <find>adDoctor()</find>
+      <find>addDo</find>
+      <find>getPer</find>
+      <find>lista</find>
+      <find>addEm</find>
+      <find>coach</find>
+      <find>addE</find>
+      <find>plan</find>
+      <find>getSup</find>
+      <find>manage</find>
+      <find>getPlan</find>
+      <find>employeeC</find>
+      <find>supporter</find>
+      <find>setPre</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>addStadium</replace>
+      <replace>stadiumAvailable</replace>
+      <replace>setSupporter</replace>
+      <replace>administerStadium</replace>
+      <replace>busAvailable</replace>
+      <replace>changePaymentStatus</replace>
+      <replace>changeC</replace>
+      <replace>changeContributionValue</replace>
+      <replace>newValue</replace>
+      <replace>Supporter</replace>
+      <replace>getSupporter</replace>
+      <replace>getSupporters</replace>
+      <replace>getSupporters()</replace>
+      <replace>paymentStatus</replace>
+      <replace>showEmployees()</replace>
+      <replace>showPhysicalResources()</replace>
+      <replace>showSupporter()</replace>
+      <replace>showNotDefaulting</replace>
+      <replace>showNotDefaulting()</replace>
+      <replace>showDefaulting()</replace>
+      <replace>showIndividualData()</replace>
+      <replace>showTransport()</replace>
+      <replace>showTrainingCenter()</replace>
+      <replace>showStadium()</replace>
+      <replace>showTeam()</replace>
+      <replace>showGeneralServices()</replace>
+      <replace>showCoachPlayers()</replace>
+      <replace>playersAble()</replace>
+      <replace>addDoctor()</replace>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/SocioTorcedor.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Tipo.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Menu.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/PreparadorFisico.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Presidente.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Onibus.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Tecnico.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Funcionario.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Medico.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Jogador.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Advogado.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/CentroTreinamento.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Cozinheiro.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Estadio.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Motorista.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/SocioTorcedor.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Administrador.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/TrainingCenter.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Bus.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Coach.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Cooker.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Cook.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Employee.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Doctor.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Driver.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Lawyer.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/PersonalTrainer.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Player.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/President.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Stadium.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Supporter.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Main.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/control/Main.java" />
+        <option value="$PROJECT_DIR$/src/view/EmployeeView.java" />
+        <option value="$PROJECT_DIR$/src/view/SupporterView.java" />
+        <option value="$PROJECT_DIR$/src/view/resourcesView.java" />
+        <option value="$PROJECT_DIR$/src/view/ResourcesView.java" />
+        <option value="$PROJECT_DIR$/src/view/MainView.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/control/supporterControl.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/control/ResourcesControl.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/control/EmployeeControl.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/control/SupporterControl.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/employees/Doctor.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/employees/Driver.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/employees/Employee.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/employees/Player.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/resources/Bus.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/resources/TrainingCenter.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/supporters/Supporter.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/control/MainControl.java" />
+        <option value="$PROJECT_DIR$/src/isoccer/Administrator.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="10" />
+    <option name="y" value="20" />
+    <option name="width" value="1260" />
+    <option name="height" value="944" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="isoccer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="isoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="control" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="isoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="employees" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="isoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="isoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="supporters" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ISoccer" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ISoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="isoccer" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ISoccer" type="58d84e3e:PackageViewProjectNode" />
+              <item name="ISoccer" type="616d4139:PackageViewModuleNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="create.test.in.the.same.root" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="isoccer" />
+    </key>
+  </component>
+  <component name="RestoreUpdateTree" date="Moments ago" ActionInfo="_Update">
+    <UpdatedFiles>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Updated from server" />
+        <option name="myStatusName" value="Changed on server" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="CHANGED_ON_SERVER" />
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Updated" />
+          <option name="myStatusName" value="Changed" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="UPDATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Created" />
+          <option name="myStatusName" value="Created" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="CREATED" />
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Deleted" />
+          <option name="myStatusName" value="Deleted" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="true" />
+          <option name="myId" value="REMOVED_FROM_REPOSITORY" />
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Administrador.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Advogado.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/CentroTreinamento.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Cozinheiro.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Estadio.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Funcionario.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Jogador.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Main.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Medico.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Motorista.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Onibus.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/PreparadorFisico.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Presidente.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/SocioTorcedor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/isoccer/Tecnico.java</PATH>
+        </FILE-GROUP>
+        <FILE-GROUP>
+          <option name="myUpdateName" value="Restored" />
+          <option name="myStatusName" value="Will be restored" />
+          <option name="mySupportsDeletion" value="false" />
+          <option name="myCanBeAbsent" value="false" />
+          <option name="myId" value="RESTORED" />
+        </FILE-GROUP>
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Modified" />
+        <option name="myStatusName" value="Modified" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MODIFIED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Skipped" />
+        <option name="myStatusName" value="Skipped" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SKIPPED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with conflicts" />
+        <option name="myStatusName" value="Will be merged with conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_CONFLICTS" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with tree conflicts" />
+        <option name="myStatusName" value="Merged with tree conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_TREE_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged with property conflicts" />
+        <option name="myStatusName" value="Will be merged with property conflicts" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED_WITH_PROPERTY_CONFLICT" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Merged" />
+        <option name="myStatusName" value="Will be merged" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="MERGED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Not in repository" />
+        <option name="myStatusName" value="Not in repository" />
+        <option name="mySupportsDeletion" value="true" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="UNKNOWN" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally added" />
+        <option name="myStatusName" value="Locally added" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_ADDED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Locally removed" />
+        <option name="myStatusName" value="Locally removed" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="LOCALLY_REMOVED" />
+      </FILE-GROUP>
+      <FILE-GROUP>
+        <option name="myUpdateName" value="Switched" />
+        <option name="myStatusName" value="Switched" />
+        <option name="mySupportsDeletion" value="false" />
+        <option name="myCanBeAbsent" value="false" />
+        <option name="myId" value="SWITCHED" />
+      </FILE-GROUP>
+    </UpdatedFiles>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.MainView">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="isoccer.control.MainControl" />
+      <module name="ISoccer" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="MainView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="isoccer.view.MainView" />
+      <module name="ISoccer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="isoccer.view.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.MainView" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainView" />
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2758f5d4-fdd4-4336-a768-c8f85ce095ab" name="Default" comment="" />
+      <created>1532971098358</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532971098358</updated>
+      <workItem from="1532971108787" duration="4327000" />
+      <workItem from="1532987944752" duration="5379000" />
+      <workItem from="1533052411990" duration="23768000" />
+      <workItem from="1533147445856" duration="14597000" />
+      <workItem from="1533174076136" duration="10373000" />
+      <workItem from="1533227785696" duration="34783000" />
+      <workItem from="1533596170574" duration="10816000" />
+      <workItem from="1534251703367" duration="3399000" />
+      <workItem from="1534257496862" duration="21901000" />
+      <workItem from="1534532162968" duration="2173000" />
+      <workItem from="1534689322778" duration="22396000" />
+      <workItem from="1534798068267" duration="10057000" />
+      <workItem from="1534869302748" duration="11729000" />
+    </task>
+    <task id="LOCAL-00001" summary="Adicionado tratamento de exceções">
+      <created>1533607923169</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1533607923169</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Refactoring">
+      <created>1534894303275</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1534894303275</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Refactoring">
+      <created>1534894479321</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1534894479321</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="175698000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info active="true" anchor="bottom" id="Messages" order="8" visible="true" weight="0.3295711" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50078124" side_tool="true" weight="0.39277652" />
+      <window_info anchor="right" id="Maven Projects" order="7" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3295711" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33069977" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Designer" order="3" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24609375" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49921876" weight="0.39277652" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295711" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionado tratamento de exceções" />
+    <MESSAGE value="Refactoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="47" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Motorista.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Advogado.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Medico.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Jogador.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/control/MainControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="40" selection-start-line="3" selection-start-column="40" selection-end-line="3" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Funcionario.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Presidente.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Medico.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Medico.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/java/lang/Object.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Tipo.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Menu.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/PreparadorFisico.java" />
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/jre/lib/rt.jar!/java/lang/System.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="319" lean-forward="true" selection-start-line="319" selection-end-line="319" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Tecnico.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Presidente.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Onibus.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Medico.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Jogador.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Funcionario.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Advogado.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/CentroTreinamento.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Cozinheiro.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Estadio.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Motorista.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/SocioTorcedor.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Administrador.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Cooker.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Coach.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Cook.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Lawyer.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/PersonalTrainer.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/President.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/control/package-info.java" />
+    <entry file="file://$PROJECT_DIR$/src/isoccer/control/ResourcesControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-862">
+          <caret line="14" column="34" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/control/SupporterControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Doctor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/employees/Player.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#698#699#0" expanded="true" />
+            <element signature="e#781#782#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/resources/Bus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="31" lean-forward="true" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/resources/Stadium.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+          <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/resources/TrainingCenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/view/EmployeeView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-176">
+          <caret line="85" column="56" selection-start-line="85" selection-start-column="56" selection-end-line="85" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/view/MainView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="23" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/view/ResourcesView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/view/SupporterView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/control/EmployeeControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/control/MainControl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="498" column="4" selection-start-line="498" selection-start-column="4" selection-end-line="498" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/Administrator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="23" column="54" lean-forward="true" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#481#491#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/isoccer/supporters/Supporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="63" column="16" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
